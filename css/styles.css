@@ -1,0 +1,152 @@
+html,body{
+    width: 100%;
+      height: auto;
+      display: flex;
+      color: #fff;
+      font-family: 'Open Sans',Arial,sans-serif;
+      line-height: 1.5;
+      overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  #navbar {
+  min-width:290px;
+  top:0px;
+  left:0px;
+  width:300px;
+  height:100%;
+  background-color: #080808f6;
+  }
+
+  #navbar ul {
+    margin: 10px 40px;
+    padding: 10px 20px;
+  }
+
+  #navbar li{
+    color: #fff;
+    border:1px solid #4d4e53;
+    border-bottom-width:1px;
+    padding: 20px 30px;
+    margin: 10px 50px;
+    list-style: none;
+    position:relative;
+    left:-50px;
+    width:100%;
+    
+  }
+
+  #navbar a{
+    color: #fff;
+      text-decoration:none;
+      cursor:pointer;
+  } 
+
+  header{
+    color: #fff;
+    font-size: 30px;
+    margin:10px;
+    text-align:center;
+    font-size:1.8em;
+    font-weight:thin;
+  }
+
+  #main-doc {
+    width: 80%;
+    background-color: #3a3838;
+    padding: 20px 50px;
+  }
+
+  section article{
+    color: #fff;
+    margin: 15px;
+    font-size:0.96em;
+  }
+  section li {
+    margin:15px 0px 0px 20px;
+  }
+
+  section ul {
+    list-style: disc;
+    padding: 0px;
+  }
+
+  .main-section {
+    padding: 20px; 
+    overflow: hidden;  
+}
+
+code {
+    width: 100%;
+    display: block;
+    text-align: left;
+    white-space: pre-wrap;  
+    position: relative;
+    word-break: break-all;  
+    line-height: 2;
+    background-color: black;
+    padding: 15px;
+    margin: 10px 0;  
+    border-radius: 5px;
+    color: white; 
+    overflow-x: auto;  
+}
+
+code::before {
+    content: "JavaScript"; 
+    display: block; 
+    width: 100%;
+    background-color: grey; 
+    color: black; 
+    text-align: center; 
+    padding: 5px 0; 
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px; 
+}
+
+section a{
+    color: #fff;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+@media only screen and (max-width: 815px) {
+    html, body {
+        flex-direction: column; /* Changes layout from row to column */
+    }
+
+    #navbar {
+        width: 100%; 
+        height: auto; 
+        min-height: 50px; 
+        position: relative; 
+    }
+
+    #navbar ul {
+        margin: 5px 20px; 
+    }
+
+    #navbar li {
+        padding: 10px 15px; 
+        margin: 5px 25px; 
+        left: 0px; 
+    }
+
+    #main-doc {
+        width: 100%; 
+        padding: 10px 25px; 
+    }
+
+    header {
+        font-size: 1.5em; 
+    }
+
+    section article, .main-section {
+        padding: 10px;
+    }
+}
